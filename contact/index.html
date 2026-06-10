@@ -1,0 +1,22 @@
+---
+layout: page
+title: Contact
+---
+
+  <div class="content">
+    <p>You can find me on the following platforms:</p>
+
+    <ul>
+      {% assign omitted_types = 'rss,email' | split: ',' %}
+      {% for entry in site.data.contact %}
+        {% unless omitted_types contains entry.type %}
+        <li>
+          <span class="{{ entry.icon }}"></span>:
+          <a href="{{ entry.url }}" target="_blank" rel="noopener">
+            {{ entry.type }}
+          </a>         
+        </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>

@@ -1,17 +1,14 @@
-title: mhunsber's site
-description: >-
-  This site is under construction...
+title: mhunsber.dev
+tagline: >-
+  ramblings about technology, board games, and more...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github:
-  username:  mhunsber
 avatar: /assets/img/avatar.jpg
 
 social:
   name: Micah Hunsberger
-  email: malanhunsber@gmail.com
   links:
-  - 'https://github.com/mhunsber'
+  - '/contact'
 
 # Build settings
 theme: jekyll-theme-chirpy

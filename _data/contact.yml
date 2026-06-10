@@ -1,0 +1,15 @@
+- type: GitHub
+  icon: "fab fa-github"
+  url: "https://github.com/mhunsber"
+
+- type: BoardGameGeek
+  icon: "fas fa-dice"
+  url: "https://boardgamegeek.com/profile/mhunsber"
+
+- type: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/mhunsber"
+
+- type: rss
+  icon: "fas fa-rss"
+  url: "/feed.xml"
