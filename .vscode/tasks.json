@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "init:ruby",
+      "type": "shell",
+      "command": ". ${workspaceFolder}/scripts/init-rb.sh && bundle install",
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Jekyll Server",
+      "type": "shell",
+      "command": ". ${workspaceFolder}/scripts/init-rb.sh && bundle exec jekyll serve",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Runs the Jekyll server."
+    },
+    {
+      "label": "Build Jekyll Site",
+      "type": "shell",
+      "command": ". ${workspaceFolder}/scripts/init-rb.sh && bundle exec jekyll build",
+      "group": {
+        "kind": "build"
+      },
+      "problemMatcher": [],
+      "detail": "Builds the Jekyll site locally."
+    }
+  ]
+}

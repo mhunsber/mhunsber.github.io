@@ -78,7 +78,8 @@ exclude:
 - .gitmodules
 - .DS_Store
 - docs
-- tools
+- scripts
+- .vscode
 - purgecss.js
 - "*.config.js"
 - "package*.json"
