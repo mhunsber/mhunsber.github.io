@@ -3,8 +3,12 @@
   url: "https://github.com/mhunsber"
 
 - type: BoardGameGeek
-  icon: "fas fa-dice"
+  icon: "fab fa-board-game-geek"
   url: "https://boardgamegeek.com/profile/mhunsber"
+
+- type: Steam
+  icon: "fab fa-steam"
+  url: "https://steamcommunity.com/id/mhunsber"
 
 - type: LinkedIn
   icon: "fab fa-linkedin"
