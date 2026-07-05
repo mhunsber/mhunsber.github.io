@@ -10,7 +10,7 @@ I am an Infrastructure/DevOps Engineer
 based out of Indianapolis, Indiana, USA.
 
 This is my personal site. I may add things about technology, board games,
-experiences, or just general ramblings.
+experiences, or other musings.
 
 The site is more of an experiment for myself than for anyone else or particular purpose.
 However, if you've found yourself here, welcome! I hope you get something out of it.
