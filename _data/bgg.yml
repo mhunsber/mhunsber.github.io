@@ -1,0 +1,16 @@
+---
+
+- show: top10 # top10 | random | recentplays | hot10 | wishlist
+  display_as: html # html | image
+  username: mhunsber
+  items: 10   # when display_as = "image", the maximum numbber of items is 10.
+  include_header: true
+  only_show_items_with_images: true
+  text: title # title | none
+  image_display: medium # small | small-fixed | medium | none
+  image_position: none # left | right
+  display_inline: false # If display_inline is "true", then image_display cannot be "none"
+  add_styles: false # add BGG's custom CSS styles.
+  show_play_date: false # when show="recentplays", will also include the last played date for each game.
+  hide_nocount_plays: true # when show="recentplays", will hide plays where you selected "Don't Count as Win Stats".
+  order_wishlist_by_rank: true # when show="wishlist", will order the wishlist by rank.

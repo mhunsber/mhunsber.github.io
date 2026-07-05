@@ -1,0 +1,27 @@
+.BGGitem img {
+  border-radius: 10%;
+  margin-top: 15px;
+  float: none !important;
+  width: 40%;
+}
+
+.BGGitem .BGGtitle {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.BGGitem a:has(img) {
+  border: unset !important;
+}
+
+.BGGitem {
+  width: 100%;
+}
+
+.BGGwrapper {
+  width: 100%;
+  font-size: 140%;
+  max-width: 600px;
+}

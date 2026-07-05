@@ -4,6 +4,37 @@ icon: fab fa-board-game-geek
 order: 1
 ---
 
-A list of my favorite games.
+<link rel="stylesheet" href="{{ '/assets/css/games.css' | relative_url }}">
 
-<script language="javascript" src="https://boardgamegeek.com/jswidget.php?username=mhunsber&numitems=5&header=1&text=title&images=small&show=random&imagesonly=1&imagepos=right&domains[]=boardgame"></script>
+<div class="content">
+  {% for entry in site.data.bgg %}
+    <div class="bgg-widget">
+        {% capture bgg_widget_url %}
+https://boardgamegeek.com/jswidget.php?
+username={{ entry.username }}
+&show={{ entry.show }}
+&numitems={{ entry.items }}
+&header={{ entry.include_header | to_integer }}
+&text={{ entry.text }}
+&images={{ entry.image_display }}
+&imagesonly={{ entry.only_show_items_with_images | to_integer }}
+&imagepos={{ entry.image_position }}
+&inline={{ entry.display_inline | to_integer }}
+&addstyles={{ entry.add_styles | to_integer }}
+&showplaydate={{ entry.show_play_date | to_integer }}
+&limitplays={{ entry.hide_nocount_plays | to_integer }}
+&wishlistrank={{ entry.order_wishlist_by_rank | to_integer }}
+{% if entry.display_as == "image" %}
+&imagewidget=1
+{% endif %}
+{% endcapture %}
+        
+        {% assign bgg_widget_url = bgg_widget_url | strip_newlines %}
+        {% if entry.display_as == "html" %}
+            <script language="javascript" src="{{ bgg_widget_url }}"></script>
+        {% elsif entry.display_as == "image" %}
+            <img src="{{ bgg_widget_url }}" border="0" />
+        {% endif %}
+    </div>
+  {% endfor %}
+</div>
