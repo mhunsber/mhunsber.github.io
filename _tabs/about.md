@@ -17,8 +17,8 @@ However, if you've found yourself here, welcome! I hope you get something out of
 
 ## Personal Life
 
-As an Indianapolis resident, I enjoy watching the Indiana Fever and walking on the Monon Trail.
-I particularly enjoy spending my time with friends by playing video games, board games, and disc golf. 
+In my personal life, I enjoy spending my time with friends by playing video games, board games, and disc golf.
+I also like taking care of and playing with my cats.
 
 ## Professional Life
 
